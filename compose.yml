@@ -16,4 +16,3 @@ services:
       replicas: 1
     depends_on:
       - devopsdb
-  ...
