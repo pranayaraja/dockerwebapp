@@ -1,5 +1,4 @@
-version: "3.9"
-
+---
 services:
   devopsdb:
     image: shaikmustafa/deepika:db
@@ -12,8 +11,9 @@ services:
   application:
     image: shaikmustafa/deepika:app
     ports:
-      - "1111:8080"
+      - "1115:8080"
     deploy:
-      replicas: 3
+      replicas: 1
     depends_on:
       - devopsdb
+  ...
